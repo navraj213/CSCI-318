@@ -1,0 +1,190 @@
+<html>
+<head>
+    <title>BNB</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        :root {
+            font-family: Inter, 'Roboto', sans-serif;
+            font-feature-settings: 'liga' 1, 'calt' 1;
+        }
+
+        body {
+            background-color: #0f172a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            margin: 1vw 1vw;
+            padding: 0;
+            width: 5.5vw;
+            height: 5.5vw;
+            min-width: 70px;
+            min-height: 70px;
+            background: transparent;
+            opacity: 0.6;
+            transition: opacity 0.5s ease, border-color 0.1s ease, box-shadow 0.5s ease, width 0.5s ease, height 0.5s ease;
+            border-radius: 50%;
+            border: #0f172a 2px solid;
+        }
+        .logo:hover {
+            opacity: 1;
+            box-shadow: 0 0px 20px rgba(255, 255, 255, 0.5);
+            border: #ffffff 2px solid;
+        }
+        .logo:target {
+            opacity: 1;
+            box-shadow: 0 0px 20px rgba(255, 255, 255, 0.5);
+            border: #ffffff 2px solid;
+        }
+        
+
+        .navbar {
+            position: fixed;
+            flex-direction: row;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+            width: 10vw;
+            height: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#section1"><img src="logo.png" class="logo" id="logo1" alt="logo"></a>
+        <a href="#section2"><img src="https://londonspeakerbureau.com/wp-content/uploads/2017/04/keynote-speaker-bikram-singh.jpg" class="logo" id="logo2" alt="logo"></a>
+        <a href="#section3"><img src="https://static.spin.com/files/2017/07/nav-1501100791.png" class="logo" id="logo3" alt="logo"></a>
+        <a href="#section4"><img src="https://i1.rgstatic.net/ii/profile.image/741421149585408-1553779985096_Q512/Thomas-Benoy.jpg" class="logo" id="logo4" alt="logo"></a>
+    </div>
+
+    <section id="section1" style="margin: 100px; flex-direction: row;">
+        <h1 style="font-size: 10vw;">Welcome!</h1>
+        <h1>Here is a little bit about us...</h1>
+    
+        <h1 style="margin-top: 20vw;">About Us</h1>
+        <h1>Small Introductions about our Team</h1>
+    </section>
+
+    <section id="section2" style="margin: 100px; flex-direction: row; margin: 10vw 0;">
+        <h1 style="font-size: 10vw;">Bikram<br>Singh</h1>
+        <h1>BS Computer Science Student</h1>
+        <h1>General Bikram Singh is a Indian army officer who served Chief of Army Staff of the Indian Army.<br>
+            Previously the General Officer Commanding-in-Chief of the army's Eastern Command,<br>
+            he succeeded General V. K. Singh.</h1>
+    </section>
+
+    <section id="section3" style="margin: 100px; flex-direction: row; margin: 10vw 0;">
+        <h1 style="font-size: 10vw;">Navraj<br>Singh</h1>
+        <h1>BS Computer Science Student</h1>
+        <h1>Navraj Singh Goraya, known by his stage name Nav, is a Canadian rapper, singer, songwriter<br>
+            and record producer from Rexdale, Ontario, of Indian Punjabi descent.<br>
+            He is signed to XO and Republic Records.</h1>
+    </section>
+
+    <section id="section4" style="margin: 100px; flex-direction: row; margin: 10vw 0;">
+        <h1 style="font-size: 10vw;">Benoy <br>Thomas</h1>
+        <h1>BS Computer Science Student</h1>
+        <h1>Thomas Benoy is a Computer Science student at the University of Texas at Dallas. <br>
+            He is a passionate programmer and loves to code. <br>
+            He is also a great team player and loves to work in a team.</h1>
+    </section>
+
+    <section id="section5" style="margin: 100px; flex-direction: row; margin: 10vw 0;">
+        <h1 style="font-size: 10vw;">Projects<br>Us</h1>
+        <h1>Here are our projects</h1>
+        <img src="https://github.com/navraj213/FiND/raw/main/Images/FiND.png" alt="FiND image" style="width: 200px;">
+        <h1>FiND (Financial Information Network Directory) is designed to provide real-time market data, <br>
+            allowing traders to have a centralized library with the necessary tools to make accurate decisions.</h1>
+    </section>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("scroll", handleScroll);
+        });
+
+        function handleScroll() {
+            var logo1 = document.getElementById("logo1");
+            var logo2 = document.getElementById("logo2");
+            var logo3 = document.getElementById("logo3");
+            var logo4 = document.getElementById("logo4");
+            // Add more logo elements as needed
+
+            var section1 = document.getElementById("section1");
+            var section2 = document.getElementById("section2");
+            // Add more section elements as needed
+
+            // Get the scroll position
+            var scrollPosition = window.scrollY - 10;
+
+            // Define the sections' scroll positions
+            var section1Scroll = section1.offsetTop;
+            var section2Scroll = section2.offsetTop;
+            var section3Scroll = section3.offsetTop;
+            var section4Scroll = section4.offsetTop;
+
+            // Add more section scroll positions as needed
+
+            // Check scroll position and update styles
+            if (scrollPosition <= section1Scroll) {
+                logo1.style.borderColor = "#ffffff";
+                // Update border color for additional logos if needed
+            } else {
+                logo1.style.borderColor = "#0f172a";
+                // Update border color for additional logos if needed
+            }
+
+            if(scrollPosition >= section1Scroll && scrollPosition <= section2Scroll) {
+                logo2.style.borderColor = "#ffffff";
+                logo2.style.width = "15vw";
+                logo2.style.height = "15vw";
+            } else {
+                logo2.style.borderColor = "#0f172a";
+                logo2.style.width = "5.5vw";
+                logo2.style.height = "5.5vw";
+            }
+
+            if(scrollPosition >= section2Scroll && scrollPosition <= section3Scroll) {
+                logo3.style.borderColor = "#ffffff";
+                logo3.style.width = "15vw";
+                logo3.style.height = "15vw";
+            } else {
+                logo3.style.borderColor = "#0f172a";
+                logo3.style.width = "5.5vw";
+                logo3.style.height = "5.5vw";
+            }
+
+            if(scrollPosition >= section3Scroll && scrollPosition <= section4Scroll) {
+                logo4.style.borderColor = "#ffffff";
+                logo4.style.width = "15vw";
+                logo4.style.height = "15vw";
+            } else {
+                logo4.style.borderColor = "#0f172a";
+                logo4.style.width = "5.5vw";
+                logo4.style.height = "5.5vw";
+            }
+
+
+
+            
+        }
+    </script>
+
+</body>
+
+</html>
