@@ -7,6 +7,7 @@ fun pow (x:int, y:int) =
     if y = 0
     then 1
     else let val temp = x * pow(x, y-1)
+    val poop = ref 0
         in print ("x = " ^ Int.toString x ^ 
                 "\ny = " ^ Int.toString y ^ 
                 "\ntemp = " ^ Int.toString temp ^ "\n\n"); 
