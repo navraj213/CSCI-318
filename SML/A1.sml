@@ -18,7 +18,7 @@ hello_world(5);
 2) in every iteration of the function call: *)
 print("\nAssignment 2\n");
 fun fibonacci (x:int) =
-    if (x<2) then (
+    if (x = 0 orelse x = 1) then (
         print("x = " ^ Int.toString x ^ "\n");
         x
         )
