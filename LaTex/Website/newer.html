@@ -1,0 +1,258 @@
+<html>
+<head>
+    <title>BNB</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    <style>
+        :root {
+            font-family: Inter, 'Roboto', sans-serif;
+            font-feature-settings: 'liga' 1, 'calt' 1;
+        }
+
+        body {
+            background-color: #0f172a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            margin: 0.5vw 0.5vw;
+            padding: 0;
+            width: 8vw;
+            height: 8vw;
+            min-width: 70px;
+            min-height: 70px;
+            background: transparent;
+            opacity: 0.6;
+            transition: opacity 0.5s ease, border-color 0.5s ease, box-shadow 0.25s ease, width 0.5s ease, height 0.5s ease;
+            border-radius: 50%;
+            border: #0f172a 2px solid;
+        }
+        .logo:hover {
+            opacity: 1;
+            box-shadow: 0 0px 20px rgba(255, 255, 255, 0.5);
+            border: #ffffff 2px solid;
+        }
+        .logo:target {
+            opacity: 1;
+            box-shadow: 0 0px 20px rgba(255, 255, 255, 0.5);
+            border: #ffffff 2px solid;
+        }
+
+        .pfp-pic {
+            margin: 0.25vw 0.25vw;
+            padding: 0;
+            width: 15vw;
+            height: 15vw;
+            min-width: 50px;
+            min-height: 50px;
+            background: transparent;
+            opacity: 0.6;
+            transition: opacity 0.5s ease, border-color 0.5s ease, box-shadow 0.25s ease, width 0.5s ease, height 0.5s ease;
+            border-radius: 50%;
+            border: #0f172a 2px solid;
+        }
+        .pfp-pic:hover {
+            width: 20vw;
+            height: 20vw;
+            opacity: 1;
+            box-shadow: 0 0px 20px rgba(255, 255, 255, 0.5);
+            border: #ffffff 2px solid;
+        }
+        .pfp-pic:target {
+            opacity: 1;
+            box-shadow: 0 0px 20px rgba(255, 255, 255, 0.5);
+            border: #ffffff 2px solid;
+        }
+        
+
+        .navbar {
+            background-color: #0f172a;
+            position: fixed;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+            /* 15, 23, 42 */
+        }
+        .navbar-scrolled {
+            box-shadow: 0 0 6em rgba(0,0,0, 0.5);
+            /* 15, 23, 42 */
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .arrow {
+            font-size: 5vw;
+            color: white;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: space-between;
+        }
+
+        .container.bio {
+            margin: 0px 0.5%;
+            padding: 15px;
+            align-items: center;
+            border: transparent 5px solid;
+        }
+
+        .container.project {
+            margin: 0px 1vw;
+            align-items: center;
+        }
+
+        .image.bio {
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 100%;
+            transition: opacity 0.15s ease, box-shadow 0.25s ease;
+            border-radius: 50%;
+            background-size: cover;
+            box-shadow: 0 0 1em rgba(15, 23, 42, 0);
+        }
+        .image.bio:hover {
+            opacity: 0;
+            z-index: 3;
+            box-shadow: 0 0 1em white;
+        }
+
+        p {
+            text-align: center;
+            color: white;
+        }
+
+        a {
+            color: white !important;
+            text-decoration: none;
+        }
+        
+        a:link, a:visited {
+            color: white !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+        <a href="#section1"><img src="logo.png" class="logo" id="logo1" alt="logo"></a>
+    </div>
+    <!-- <div class="sticky-container">
+        <a href="#section2"><img src="https://londonspeakerbureau.com/wp-content/uploads/2017/04/keynote-speaker-bikram-singh.jpg" class="pfp-pic" id="logo2" alt="logo"></a>
+        <a href="#section3"><img src="https://static.spin.com/files/2017/07/nav-1501100791.png" class="pfp-pic" id="logo3" alt="logo"></a>
+        <a href="#section4"><img src="https://i1.rgstatic.net/ii/profile.image/741421149585408-1553779985096_Q512/Thomas-Benoy.jpg" class="pfp-pic" id="logo4" alt="logo"></a>
+    </div> -->
+    <section id="section1"></section>
+    <div style="margin-top: 15vw;"></div>
+
+    <section>
+        <h1 style="font-size: 10vw;">Welcome!</h1>
+        <h1>Here is a little bit about us...</h1>
+        <div style="cursor: default; user-select: none;" class="arrow">&#8595;</div>
+        <!-- <h1 style="margin-top: 20vw;">About Us</h1>
+        <h1>Small Introductions about our Team</h1> -->
+    </section>
+
+    <div class="container" style="margin-top: 15vw;">
+        <h1 style="font-size: 7vw; margin-bottom: 5vw;">About Us</h1>
+        <div class="container" style="flex-direction: row; box-shadow: transparent 0px 0px 0px;">
+            <div class="container bio">
+                <div style="position: relative;">
+                    <img src="https://londonspeakerbureau.com/wp-content/uploads/2017/04/keynote-speaker-bikram-singh.jpg" alt="Bikram image" class="image bio" id="bikram-image" style="position: absolute;">
+                    <img src="BIK.png" class="image bio">
+                </div>
+                <h1 style="color: #424242;"><a href="https://github.com/BikramSingh04">Bikram Singh</a></h1>
+                <p>BS Computer Science Student<br>General Bikram Singh is a Indian army officer who served Chief of Army Staff of the Indian Army. Previously the General Officer Commanding-in-Chief of the army's Eastern Command, he succeeded General V. K. Singh.</p>
+            </div>
+            <div class="container bio">
+                <div style="position: relative;">
+                    <img src="https://static.spin.com/files/2017/07/nav-1501100791.png" alt="Nav Image" class="image bio" id="nav-image" style="position: absolute;">
+                    <img src="NAV.png" class="image bio">
+                </div>
+                <h1 style="color: #424242;"><a href="https://github.com/navraj213">Nav</a></h1>
+                <p>BS Computer Science Student<br>Navraj Singh Goraya, known by his stage name Nav, is a Canadian rapper, singer, songwriter and record producer from Rexdale, Ontario, of Indian Punjabi descent. He is signed to XO and Republic Records.</p>
+            </div>
+            <div class="container bio">
+                <div style="position: relative;">
+                    <img src="https://i1.rgstatic.net/ii/profile.image/741421149585408-1553779985096_Q512/Thomas-Benoy.jpg" alt="Benoy Image" class="image bio" id="benoy-image" style="position: absolute;">
+                    <img src="BEN.png" class="image bio">
+                </div>
+                
+                <h1 style="color: #424242;"><a href="https://github.com/Bthoma31">Benoy Thomas</a></h1>
+                <p>BS Computer Science Student<br>welcomes Benoy Thomas as the new regional director (RD) overseeing agency casework in New York, New Jersey, Delaware, Pennsylvania, Maryland, Virginia, West Virginia, and Washington, D.C.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 15vw;">
+        <h1 style="font-size: 7vw; margin-bottom: 2vw;">Our Projects</h1>
+        <div class="container" style="flex-direction: row; box-shadow: transparent 0px 0px 0px;">
+            <div class="container bio">
+                <img src="https://github.com/navraj213/FiND/raw/main/Images/FiND.png" alt="FiND image" style="width: 200px">
+                <h1 style="color: #424242;"><a href="https://github.com/navraj213/FiND"><br>FiND</a></h1>
+                <p>FiND (Financial Information Network Directory) is designed to provide real-time market data, allowing traders to have a centralized library with the necessary tools to make accurate decisions.</p>
+            </div>
+            <div class="container bio">
+                <img src="https://www.pngall.com/wp-content/uploads/12/Garage-PNG.png" alt="GarageSort Image" style="height: 100px">
+                <h1 style="color: #424242;"><a href="https://github.com/navraj213/GarageSort">GarageSort</a></h1>
+                <p>A Java Software garage inventory manager designed to efficiently organize tools and parts, employing data structures.</p>
+            </div>
+            <div class="container bio">
+                <img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png" alt="Schedule Image" style="height: 150px">
+                <h1 style="color: #424242;"><a href="https://github.com/bikramsingh04">Schedule Planner</a></h1>
+                <p>Coded by Bikram and Benoy, this software creates NYIT class Schedules according to DegreeWorks and custom restrictions created by the user.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+        var navbar = document.getElementById('navbar');
+        if (window.pageYOffset > 5) { // adjust this value to when you want the navbar to change
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+        }
+        };
+    </script>
+</body>
+
+</html>
