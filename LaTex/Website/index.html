@@ -37,6 +37,7 @@
             transition: opacity 0.5s ease, border-color 0.5s ease, box-shadow 0.25s ease, width 0.5s ease, height 0.5s ease;
             border-radius: 50%;
             border: #0f172a 2px solid;
+            animation: slow-pulse 5s infinite;
         }
         .logo:hover {
             opacity: 1;
@@ -104,7 +105,7 @@
         .arrow {
             font-size: 5vw;
             color: white;
-            animation: pulse 2s infinite;
+            animation: pulse 3s infinite;
         }
 
         @keyframes pulse {
@@ -113,6 +114,18 @@
             }
             50% {
                 opacity: 0.1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slow-pulse {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.65;
             }
             100% {
                 opacity: 1;
@@ -172,7 +185,7 @@
 
 <body>
     <div class="navbar" id="navbar">
-        <a href="#section1"><img src="logo.png" class="logo" id="logo1" alt="logo"></a>
+        <a href="#"><img src="logo.png" class="logo" id="logo1" alt="logo"></a>
     </div>
     <!-- <div class="sticky-container">
         <a href="#section2"><img src="https://londonspeakerbureau.com/wp-content/uploads/2017/04/keynote-speaker-bikram-singh.jpg" class="pfp-pic" id="logo2" alt="logo"></a>
@@ -191,32 +204,32 @@
     </section>
 
     <div class="container" style="margin-top: 15vw;">
-        <h1 style="font-size: 7vw; margin-bottom: 5vw;">About Us</h1>
+        <h1 style="font-size: 7vw; margin-bottom: 5vw;">Who are we</h1>
         <div class="container" style="flex-direction: row; box-shadow: transparent 0px 0px 0px;">
             <div class="container bio">
                 <div style="position: relative;">
-                    <img src="https://londonspeakerbureau.com/wp-content/uploads/2017/04/keynote-speaker-bikram-singh.jpg" alt="Bikram image" class="image bio" id="bikram-image" style="position: absolute;">
+                    <img src="bikram.png" alt="Bikram image" class="image bio" id="bikram-image" style="position: absolute;">
                     <img src="BIK.png" class="image bio">
                 </div>
-                <h1 style="color: #424242;"><a href="https://github.com/BikramSingh04">Bikram Singh</a></h1>
+                <h1 style="color: #424242; font-weight: normal;"><a href="https://github.com/BikramSingh04" target="_blank"><strong>Bik</strong>ram Singh</a></h1>
                 <p>BS Computer Science Student<br>General Bikram Singh is a Indian army officer who served Chief of Army Staff of the Indian Army. Previously the General Officer Commanding-in-Chief of the army's Eastern Command, he succeeded General V. K. Singh.</p>
             </div>
             <div class="container bio">
                 <div style="position: relative;">
-                    <img src="https://static.spin.com/files/2017/07/nav-1501100791.png" alt="Nav Image" class="image bio" id="nav-image" style="position: absolute;">
+                    <img src="navraj.jpg" alt="Nav Image" class="image bio" id="nav-image" style="position: absolute;">
                     <img src="NAV.png" class="image bio">
                 </div>
-                <h1 style="color: #424242;"><a href="https://github.com/navraj213">Nav</a></h1>
+                <h1 style="color: #424242; font-weight: normal;"><a href="https://github.com/navraj213" target="_blank"><strong>Nav</strong>raj Singh</a></h1>
                 <p>BS Computer Science Student<br>Navraj Singh Goraya, known by his stage name Nav, is a Canadian rapper, singer, songwriter and record producer from Rexdale, Ontario, of Indian Punjabi descent. He is signed to XO and Republic Records.</p>
             </div>
             <div class="container bio">
                 <div style="position: relative;">
-                    <img src="https://i1.rgstatic.net/ii/profile.image/741421149585408-1553779985096_Q512/Thomas-Benoy.jpg" alt="Benoy Image" class="image bio" id="benoy-image" style="position: absolute;">
+                    <img src="benoy.jpg" alt="Benoy Image" class="image bio" id="benoy-image" style="position: absolute;">
                     <img src="BEN.png" class="image bio">
                 </div>
                 
-                <h1 style="color: #424242;"><a href="https://github.com/Bthoma31">Benoy Thomas</a></h1>
-                <p>BS Computer Science Student<br>welcomes Benoy Thomas as the new regional director (RD) overseeing agency casework in New York, New Jersey, Delaware, Pennsylvania, Maryland, Virginia, West Virginia, and Washington, D.C.</p>
+                <h1 style="color: #424242; font-weight: normal;"><a href="https://github.com/Bthoma31" target="_blank"><strong>Ben</strong>oy Thomas</a></h1>
+                <p>BS Computer Science Student<br>Benoy Thomas is the new regional director (RD) overseeing agency casework in New York, New Jersey, Delaware, Pennsylvania, Maryland, Virginia, West Virginia, and Washington, D.C.</p>
             </div>
         </div>
     </div>
@@ -226,18 +239,38 @@
         <div class="container" style="flex-direction: row; box-shadow: transparent 0px 0px 0px;">
             <div class="container bio">
                 <img src="https://github.com/navraj213/FiND/raw/main/Images/FiND.png" alt="FiND image" style="width: 200px">
-                <h1 style="color: #424242;"><a href="https://github.com/navraj213/FiND"><br>FiND</a></h1>
+                <h1 style="color: #424242;"><a href="https://github.com/navraj213/FiND" target="_blank"><br>FiND</a></h1>
                 <p>FiND (Financial Information Network Directory) is designed to provide real-time market data, allowing traders to have a centralized library with the necessary tools to make accurate decisions.</p>
             </div>
             <div class="container bio">
                 <img src="https://www.pngall.com/wp-content/uploads/12/Garage-PNG.png" alt="GarageSort Image" style="height: 100px">
-                <h1 style="color: #424242;"><a href="https://github.com/navraj213/GarageSort">GarageSort</a></h1>
+                <h1 style="color: #424242;"><a href="https://github.com/navraj213/GarageSort" target="_blank">GarageSort</a></h1>
                 <p>A Java Software garage inventory manager designed to efficiently organize tools and parts, employing data structures.</p>
             </div>
             <div class="container bio">
                 <img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png" alt="Schedule Image" style="height: 150px">
-                <h1 style="color: #424242;"><a href="https://github.com/bikramsingh04">Schedule Planner</a></h1>
+                <h1 style="color: #424242;"><a href="https://github.com/bikramsingh04" target="_blank">Schedule Planner</a></h1>
                 <p>Coded by Bikram and Benoy, this software creates NYIT class Schedules according to DegreeWorks and custom restrictions created by the user.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 15vw; margin-bottom: 5vw;">
+        <h1 style="font-size: 7vw; margin-bottom: 2vw;">LaTex Project</h1>
+        <div class="container" style="flex-direction: row; box-shadow: transparent 0px 0px 0px;">
+            <div class="container bio">
+                <h1 style="color: #424242;"><a href="https://latexbase.com/d/64b8755a-36a7-4d2f-9e64-a4cc500f6d4b" target="_blank"><br>Try It Yourself</a></h1>
+                <p>Free Online LaTex Compiler</p>
+                <a href="https://latexbase.com/d/64b8755a-36a7-4d2f-9e64-a4cc500f6d4b" target="_blank">
+                    <embed src="https://latexbase.com/d/64b8755a-36a7-4d2f-9e64-a4cc500f6d4b" style="width:45vw; height: 50vh;">
+                </a>
+            </div>
+            <div class="container bio">
+                <h1 style="color: #424242;"><a href="myProject.pdf" target="_blank"><br>Beamer Example</a></h1>
+                <p>Beamer Slides about Formatting</p>
+                <a href="myProject.pdf" target="_blank">
+                    <embed src="myProject.pdf" style="width:45vw; height: 50vh;">
+                </a>
             </div>
         </div>
     </div>
