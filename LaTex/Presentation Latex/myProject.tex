@@ -1,0 +1,182 @@
+\documentclass[pdf]{beamer}
+\usetheme{Warsaw}
+\usecolortheme{default}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{chancery}
+\mode<presentation>{}
+%% preamble
+\title{Formatting in Beamer}
+\author[]{By Benoy Thomas, Navraj Singh, Bikram Singh}
+\begin{document}
+\maketitle
+\begin{frame}{Table of Contents}
+    \tableofcontents
+\end{frame}
+\section{Formatting in Latex}
+\begin{frame}{Formatting in LaTeX}
+    The thing that makes Latex so useful is the fact that
+    there are so many in built packages that you can utililize.
+
+    \par Such as:
+    \begin{itemize}
+        \item {\fontfamily{pzc}\selectfont Font Families}
+        \item \Huge{Font} \huge{Styles} \Large{or} \large{Sizes}
+        \item \textbf{Bold,} \textit{italics,} \underline{ and Underlining}
+        \item Mathematical $\Sigma$xpressions
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Font Families}
+    \par By default, in standard LaTeX classes the default style for text is usually a Roman (upright) serif font. 
+    \par To change the font you just need to use some simple latex commands
+    \par Latex has hundreds thousands of different fonts you can choose from.
+    \par The code would look like:
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{center}
+                CODE
+            \end{center}
+            \par \small{\textbf{\textit{\texttt{\textbackslash usepackage\{chancery\}}}}}
+            \par \small{\textbf{\texttt{\textbackslash fontfamily\{pzc\}\textbackslash selectfont Hello in Cursive}}}
+        \end{column}
+        \vrule
+        \begin{column}{0.5\textwidth}
+            \begin{center}
+                OUTPUT
+            \end{center}
+            \par \small{\fontfamily{pzc}\selectfont \,Hello in Cursive\\~\\~\\}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Font Styles and Sizes}
+    LaTeX offers various options for customizing the 
+    appearance of your text. While it automatically 
+    sets fonts based on document structure, you can 
+    control both size and style. Default font size is 
+    10pt, with options ranging from 8pt to 20pt. 
+    Commands like tiny and large allow for specific 
+    size adjustments.
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{center}
+                CODE\\~\\
+            \end{center}
+            \par \small{\textbf{\textit{\texttt{\textbackslash Huge\{Huge Text\}}}}}
+            \par \small{\textbf{\textit{\texttt{\textbackslash tiny\{Tiny Text\}}}}}
+        \end{column}
+        \vrule
+        \begin{column}{0.5\textwidth}
+            \begin{center}
+                OUTPUT
+            \end{center}
+            \par \, \Huge{Huge Text}
+            \par \, \tiny{Tiny Text}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+\begin{frame}{Bold, Italics, and Underlining}
+    LaTeX provides distinct commands for achieving bold, italic, 
+    and underlined text, allowing you to emphasize 
+    specific words or phrases. To make text bold,
+     use the textbf command. For italics, 
+     use textit or emph. Underlining can be 
+     achieved with underline. These commands 
+     can be nested to combine effects. For example, \textbf{\textit{important}} 
+     produces bold and italicized text. However, overuse
+     of these formatting options can hinder readability.
+
+     \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{center}
+                CODE
+            \end{center}
+            \par \footnotesize{\textbf{\textit{\texttt{\textbackslash textbf\{Bold,\}}}}}
+            \par \footnotesize{\textbf{\textit{\texttt{\textbackslash textit\{Italics,\}}}}}
+            \par \footnotesize{\textbf{\textit{\texttt{\textbackslash underline\{and Underline.\}}}}}
+            \par \footnotesize{\textbf{\textit{\texttt{\textbackslash textbf\{\textbackslash textit\{\textbackslash \\ underline\{All.\}\}\}}}}}
+        \end{column}
+        \vrule
+        \begin{column}{0.5\textwidth}
+            \begin{center}
+                OUTPUT
+            \end{center}
+            \par \, \textbf{Bold,} 
+            \par \, \textit{Italics,} 
+            \par \, \underline{and Underline.}
+            \par \, \textbf{\textit{\underline{All.}}}
+        \end{column}
+    \end{columns}
+    
+\end{frame}
+\begin{frame}{Mathmatical Expressions}
+        What's even crazier is that Latex can be used for Mathmatical expressions as well.
+        There are two modes for Mathmatical equations.
+        \begin{itemize}
+            \item Inline Mode: is when you need to make a short expression within regular text
+            \item Display mode: is for when you want to represent stand alone equations (you can do this [ ] or with the begin {equation} )
+        \end{itemize}
+\end{frame}
+
+\begin{frame}{Mathmatical Examples}
+    \par \textbf{\textit{Inline Mode}}
+    \par \textbf{\textit{CODE:}} {\textit{\texttt{\$a\^{}2 + b\^{}2 = c\^{}2\$}}}
+    \par \textbf{\textit{OUTPUT:}} $a^2 + b^2 = c^2$
+    \par \textbf{\textit{\\Display Mode}}
+    \par \textbf{\textit{CODE:}} {\textit{\texttt{\textbackslash begin\{equation\} \\ a\^{}2 + b\^{}2 = c\^{}2 \\ \textbackslash end\{equation\}}}}
+    \par \textbf{\textit{\\OUTPUT:}} \begin{equation} a^2 + b^2 = c^2 \end{equation}
+\end{frame}
+
+
+
+\section{Formatting in Beamer}
+\begin{frame}{What is Beamer?}
+    Beamer is a LaTeX document class for c
+    reating presentation slides, with a 
+    wide range of templates and a set of 
+    features for making slideshow effects. 
+\end{frame}
+
+\begin{frame}{Why is it useful?}
+    Beamer is useful becuase of the wide range of packages that are provided in it.
+    Compared to languages like html you don't have to worry about styling due to the fact that
+    a lot of the styles come imbedded in the beamer.
+\end{frame}
+\begin{frame}{Color Themes}
+    Beamer provides a diverse range of color themes when it comes to slides, some of which include:
+    \begin{enumerate}
+        \item seams: Creates a modern and professional look with subtle color gradients and contrasting elements.
+        \item Warsaw: Utilizes bold colors and clear divisions between presentation elements, making it suitable for impactful presentations.
+        \item adrid: Provides a clean and minimalist aesthetic with muted tones, ideal for presentations emphasizing text and content.
+        \item ontpellier: Offers a vibrant and colorful scheme, well-suited for presentations targeting younger audiences or aiming for a more informal tone.
+        \item PaloAlto: Features a dark background with bright accent colors, perfect for highlighting key points and creating a dramatic effect.
+    \end{enumerate}
+        
+\end{frame}
+\begin{frame}{Frame Types}
+    \par \textbf{\textit{Frame Types:}} 
+\par Frame: The basic building block, containing the main content of your presentation.
+\par Title: Used for the presentation title and author information.
+\par Slide: Represents individual slides within a frame, allowing for multi-step presentations.
+\par Navigation: Displays navigation elements like previous/next buttons and frame thumbnails.
+\par \textbf{\textit{Navigation styles:}} 
+\par Navigation symbols: The default style, showing small circles or squares representing frames.
+\par Scrollbar: Displays a horizontal scrollbar for navigating through frames.
+\par Miniature: Presents thumbnail previews of each frame for quick visual navigation.
+\par Outline: Shows a hierarchical outline of the presentation structure.
+\end{frame}
+\begin{frame}{Customization}
+    Beamer allows for a lot of customizing. Where you can customize your own themes in \textbf{\textit{.sty files}} 
+    which can then be loaded into within your slides.
+    \par Some advanced features allow for overlays and animations to be added to certain slides.
+\end{frame}
+\begin{frame}{}
+    \centering \Large
+    \emph{Questions?}
+  \end{frame}
+
+
+\end{document}

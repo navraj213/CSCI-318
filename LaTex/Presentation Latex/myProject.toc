@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{Formatting in Latex}{3}{0}{1}
+\beamer@sectionintoc {2}{Formatting in Beamer}{9}{0}{2}
