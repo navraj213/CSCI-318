@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1708311384 "/Users/navraj/Desktop/CSCI-318/LaTex/Presentation Latex/myProject.tex" "myProject.pdf" "myProject" 1708311386 0
-  "/Users/navraj/Desktop/CSCI-318/LaTex/Presentation Latex/myProject.tex" 1708311383 7842 ad058440657852e2f5a9defbc7a70e30 ""
+["pdflatex"] 1708451493 "/Users/navraj/Desktop/CSCI-318/LaTex/Presentation Latex/myProject.tex" "myProject.pdf" "myProject" 1708451495 0
+  "/Users/navraj/Desktop/CSCI-318/LaTex/Presentation Latex/myProject.tex" 1708451492 7842 b4b21d42fab4303c2c590ddff32a6dfb ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/courier/pcrb7t.tfm" 1136768653 960 4ab65358b8406f30ef5496c8c096d22b ""
@@ -237,11 +237,11 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1705919758 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1705919534 7883461 a3059fd80f0a5b2b0f669c52bdd7227f ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "myProject.aux" 1708311386 3222 666aac829d8efcbdbc7262f06563eabf "pdflatex"
-  "myProject.nav" 1708311386 1818 fb54a42fc67c908113f7ac6b53d6e229 "pdflatex"
-  "myProject.out" 1708311386 293 05ce6a1f8d2005d8d8015f811964300a "pdflatex"
-  "myProject.tex" 1708311383 7842 ad058440657852e2f5a9defbc7a70e30 ""
-  "myProject.toc" 1708311386 111 329a6fe80284a92ee743be3b88dd342b "pdflatex"
+  "myProject.aux" 1708451495 3222 666aac829d8efcbdbc7262f06563eabf "pdflatex"
+  "myProject.nav" 1708451495 1818 fb54a42fc67c908113f7ac6b53d6e229 "pdflatex"
+  "myProject.out" 1708451495 293 05ce6a1f8d2005d8d8015f811964300a "pdflatex"
+  "myProject.tex" 1708451492 7842 b4b21d42fab4303c2c590ddff32a6dfb ""
+  "myProject.toc" 1708451495 111 329a6fe80284a92ee743be3b88dd342b "pdflatex"
   (generated)
   "myProject.aux"
   "myProject.log"
