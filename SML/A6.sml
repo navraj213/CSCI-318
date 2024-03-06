@@ -1,12 +1,3 @@
-(*
- * DO NOT SUBMIT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- * WORK IN PROGRESS
- * NAV STILL HAS TO FIX
-
- * cbt
- *)
-
-
 (* 1. Defines a datatype investment with two subtypes:
 ● Stock - a tuple consisting of a symbol (string), price (int) and shares (int)
 ● Cash - a single int representing an amount of money *)
@@ -20,7 +11,6 @@ fun valueOf(inv : investment) =
     case inv of
         Stock(_, price, shares) => price * shares
         | Cash(amt) => amt
-
 
 (* 3. Binds a Stock investment with values ("AAPL", 100, 5) to the variable appleStock *)
 val appleStock = Stock("AAPL", 100, 5)
@@ -48,21 +38,15 @@ NegativeValue exception
 ● otherwise, if the investment is a Stock, prints out the stock symbol and the value of
 price x shares
 ● if the investment is Cash, prints out “Cash = “ and the amount of money in cash *)
-
-(* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HAVE TO FIX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*)
-(* fun printValue(inv: investment) = 
+fun printValue(inv: investment) = 
     case inv of 
         Stock(symb, price, shares) => if price * shares < 0 then
                                          raise NegativeValue 
                                       else
-                                         print(Int.toString (price * shares))
-      | Cash(amt) => print("Cash = " ^ Int.toString amt)
+                                         (print(symb ^ " = " ^ Int.toString (price * shares)))
+      | Cash(amt) => (print("Cash = " ^ Int.toString amt))
 
-
-
-printValue(appleStock) *)
-
-
+val ans3 = printValue(appleStock)
 
 (* 3. Write ML expressions that do the following: *)
 (* 1. Defines a function compareValue that takes two investments as arguments and returns
@@ -71,10 +55,10 @@ fun compareValue(inv1: investment, inv2: investment) =
     valueOf(inv1) > valueOf(inv2)
 
 (* 2. Calls the function compareValue with appleStock and myCash as arguments *)
-val ans5 = compareValue(appleStock, myCash)
+val ans4 = compareValue(appleStock, myCash)
 
 (* 3. Calls the function compareValue with myCash and appleStock as arguments *)
-val ans6 = compareValue(myCash, appleStock)
+val ans5 = compareValue(myCash, appleStock)
 
 
 
@@ -94,22 +78,27 @@ fun findMaxValue(investments: investment list) =
                             else max_rest
                         end
 
+(* 2. Binds the value ("GOOG", 70, 15) to googleStock *)
 val googleStock = Stock("GOOG", 70, 15)
+
+(* 3. Binds the value ("FB", 20, 8) to facebookStock *)
 val facebookStock = Stock("FB", 20, 8)
+
+(* 4. Binds the value (“IBM”, 30, 10) to ibmStock *)
 val ibmStock = Stock("IBM", 30, 10)
 
+(* 4. Creates a list of all five investments (appleStock, ibmStock, googleStock,
+facebookStock and myCash) bound to investmentList *)
 val investmentList = [myCash, appleStock, googleStock, facebookStock, ibmStock]
 
-val ans10 = findMaxValue(investmentList)
+(* 5. Calls findMaxValue with investmentList as its argument *)
+val ans6 = findMaxValue(investmentList)
 
 
 
 
 
-
-
-(* 
-5. Write ML expressions that do the following:
+(* 5. Write ML expressions that do the following:
 1. Defines findMaxValueTwo, which uses compareValue as a nested function *)
 fun findMaxValueTwo(investments: investment list) = 
     let fun compareValue2(inv1: investment, inv2: investment) =
@@ -126,4 +115,4 @@ fun findMaxValueTwo(investments: investment list) =
                             end
     end
 
-val ans100 = findMaxValueTwo(investmentList)
+val ans7 = findMaxValueTwo(investmentList)
