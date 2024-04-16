@@ -72,3 +72,14 @@
 
 ; 5. Calls findMaxValue with stockList as its argument
 (findMaxValue stockList)
+
+
+
+(define (countdown x y)
+    (if (= x y)
+        (cons x null)
+        (cons x (countdown (- x 1) y))
+    )
+)
+
+(countdown 7 3)
